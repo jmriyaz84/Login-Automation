@@ -1,0 +1,83 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 3519761854,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BrowserManagement.prepareBrowser()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "Verify Login",
+        "description": "",
+        "id": "login-function;verify-login",
+        "after": [
+          {
+            "result": {
+              "duration": 308924,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BrowserManagement.updateScreenShot(Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 3085617266,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BrowserManagement.closeBrowser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 6227206657,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User is on Login Page",
+            "match": {
+              "location": "LoginSteps.login()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 6600660349,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "enter the username and password",
+            "match": {
+              "location": "LoginSteps.enterTheUsernameAndPassword()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 3,
+            "name": "@TC01_LoginTest"
+          }
+        ]
+      }
+    ],
+    "name": "Login Function",
+    "description": "",
+    "id": "login-function",
+    "keyword": "Feature",
+    "uri": "src/main/resources/features/Login.feature"
+  }
+]

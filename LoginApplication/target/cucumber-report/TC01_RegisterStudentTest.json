@@ -1,0 +1,89 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 2887965902,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BrowserManagement.prepareBrowser()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "Register Student",
+        "description": "",
+        "id": "login-function;register-student",
+        "after": [
+          {
+            "result": {
+              "duration": 109538,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BrowserManagement.updateScreenShot(Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 1136261799,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BrowserManagement.closeBrowser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 215221422,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User is on Login Page",
+            "match": {
+              "location": "LoginSteps.login()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 391147238,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "click register as \"Student\" button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Student",
+                  "offset": 19
+                }
+              ],
+              "location": "LoginSteps.clickRegisterAsButton(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 3,
+            "name": "@TC01_RegisterStudentTest"
+          }
+        ]
+      }
+    ],
+    "name": "Login Function",
+    "description": "",
+    "id": "login-function",
+    "keyword": "Feature",
+    "uri": "src/main/resources/features/Login.feature"
+  }
+]
